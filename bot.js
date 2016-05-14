@@ -4,7 +4,7 @@ var Bot = require('node-telegram-bot-api'), bot;
 
 if(process.env.NODE_ENV === 'production') {
   bot = new Bot(token);
-  bot.setWebHook('https://.com/' + bot.token);
+  bot.setWebHook('https://limitless-lake-95268.herokuapp.com/' + bot.token);
 }
 else {
   bot = new Bot(token, { polling: true });
